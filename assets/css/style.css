@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  height: 100%;
+  background-image: url(../img/grey-bg.jpg);
+}
+
+/* Navbar */
+header{
+  background-color: rgba(0, 0, 0, 1);
+  height: 60px;
+  width: 100%;
+  border: 1px solid;
+}
+
+header h1{
+  float: left;
+  color: white;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+header ul{
+  float: right;
+  list-style-type: none;
+  margin: 15px 10px 0;
+}
+
+header ul li{
+  display: inline;
+}
+
+header ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+/* Quote */
+.quote{
+  color: white;
+  text-align: center;
+  margin-top: 200px;
+}
+
+section h2{
+  font-family: "Lucida Bright", Georgia, serif;
+}
+
+section p{
+  font-family: "Lucida Sans Typewriter";
+}
+
+/* About Me */
+.about{
+  color: white;
+  text-align: center;
+  margin: 100px 0;
+}
+
+/* Footer */
+footer{
+  background-color: rgba(0, 0, 0, 1);
+  height: 60px;
+  width: 100%;
+  border: 1px solid;
+  position: absolute;
+  bottom: 0;
+}
+
+footer h4{
+  color: white;
+  float: right;
+  padding-top: 20px;
+  margin-right: 10px;
+  opacity: 0.5;
+}
+
+footer ul{
+  float: left;
+}
+
+footer ul li{
+  display: inline;
+}
+
+.social{
+  width: 50px;
+  padding-top: 5px;
+  margin-right: 10px;
+}
