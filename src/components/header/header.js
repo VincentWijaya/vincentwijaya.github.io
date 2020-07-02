@@ -10,7 +10,7 @@ const Header = ({ siteTitle, description }) => {
         <h1>{siteTitle}</h1>
         <h3>Full Stack Javascript Developer</h3>
         <p>
-          I'm obsessed with making things and even more obsessed with making things better. I've been start coding since I wrote my first code with C++. After graduating from the SMK Telkom Sandhy Putra Jakarta, I've join Havktiv8 Indonesia and start learning to be a Fullstack Javascript Developer.<br/><br/>
+          I'm obsessed with making things and even more obsessed with making things better. I've been start coding since I wrote my first code with C++. After graduating from the SMK Telkom Sandhy Putra Jakarta, I've join Hacktiv8 Indonesia and start learning to be a Fullstack Javascript Developer.<br/><br/>
 
           My specialty is full website strategy and development. I open for any position that related with Web or Mobile development.<br/><br/>
 
