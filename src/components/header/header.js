@@ -8,7 +8,7 @@ const Header = ({ siteTitle, description }) => {
       <img className="avatar" src={require('../../images/profile.jpg')} alt="avatar"/>
       <div className="textHeader">
         <h1>{siteTitle}</h1>
-        <h3>Full Stack Javascript Developer</h3>
+        <h3>Full Stack Developer</h3>
         <p>
           I'm obsessed with making things and even more obsessed with making things better. I've been start coding since I wrote my first code with C++. After graduating from the SMK Telkom Sandhy Putra Jakarta, I've join Hacktiv8 Indonesia and start learning to be a Fullstack Javascript Developer.<br/><br/>
 
