@@ -19,7 +19,7 @@ const Header = ({ siteTitle, description }) => {
       </div>
       <div className="logoCompany">
         <a href="https://github.com/vincentwijaya" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/vincent-wijaya-98051356/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/vincwijaya" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
         <a href="https://bit.ly/2WuZFL1" target="_blank" rel="noopener noreferrer"><i className="far fa-file"></i></a>
       </div>
     </header>
