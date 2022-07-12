@@ -18,17 +18,17 @@ class IndexPage extends Component {
         url: 'https://tamvan-ec3e6.firebaseapp.com',
         description: 'A simple real-time kanban board!'
       },
-      // {
-      //   title: 'STUCK OVERFLOW',
-      //   image: require('../images/stuck-overflow.png'),
-      //   url: 'https://stuck-overflow.skinborderevent.ml/',
-      //   description: 'Simple forum like Stackoverflow!'
-      // },
       {
         title: 'RAHASIA SAYA',
         image: require('../images/rahasia-saya.png'),
         url: 'https://rahasia-saya.firebaseapp.com',
         description: 'Web based app to manage your password!'
+      },
+      {
+        title: 'RAISHANRISE',
+        image: require('../images/raishanrise.png'),
+        url: 'https://raishanrise.my.id/',
+        description: 'Raisha Syifa fanbase website'
       },
     ]
   }
