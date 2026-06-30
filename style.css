@@ -279,6 +279,8 @@ img { max-width: 100%; display: block; }
    ============================================ */
 .section {
   padding: 100px 50px;
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 800px;
 }
 
 .section-alt {
@@ -503,11 +505,17 @@ img { max-width: 100%; display: block; }
 
 .job-contributions li {
   display: flex;
+  align-items: flex-start;
   gap: 0.65rem;
   color: var(--text-secondary);
   font-size: 0.875rem;
   margin-bottom: 0.45rem;
   line-height: 1.65;
+}
+
+.job-contributions li > span {
+  flex: 1;
+  min-width: 0;
 }
 
 .job-contributions li::before {
@@ -642,6 +650,28 @@ img { max-width: 100%; display: block; }
   color: var(--accent);
   font-size: 0.875rem;
   margin-bottom: 0.2rem;
+}
+
+.edu-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+
+.edu-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  font-family: var(--font-mono);
+}
+
+.edu-meta span i {
+  color: var(--accent);
+  font-size: 0.72rem;
 }
 
 .edu-period {
@@ -788,4 +818,13 @@ footer {
   .soft-skills ul { grid-template-columns: 1fr; }
   .edu-card { flex-direction: column; }
   .contact-list { flex-direction: column; align-items: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
