@@ -51,3 +51,9 @@ const animateObserver = new IntersectionObserver(entries => {
 document.querySelectorAll('.tl-item, .skill-card, .edu-card').forEach(el => {
   animateObserver.observe(el);
 });
+
+// ─── Easter egg ──────────────────────────────────────────────────────────────
+console.log('%c👋 Hey there, curious dev!', 'font-size:20px;font-weight:bold;color:#6366f1;');
+console.log('%cYou opened the console. What a nice move.', 'font-size:14px;color:#a5b4fc;');
+console.log('%cLike what you see? Let\'s connect → https://linkedin.com/in/vincwijaya', 'font-size:12px;color:#94a3b8;');
+console.log('%c', 'padding:40px 100px;background:url(https://avatars.githubusercontent.com/u/0?s=200) no-repeat center/contain;');
