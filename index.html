@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0a192f" />
   <meta name="color-scheme" content="dark" />
-  <meta name="description" content="Vincent Wijaya — Software Engineer with 6+ years of expertise in financial services. Specialising in scalable NodeJS, Golang, Ruby on Rails and SolidJS backend systems for fintech, SaaS and digital payments." />
+  <meta name="description" content="Vincent Wijaya — Software Engineer with 7+ years of expertise in financial services. Specialising in scalable NodeJS, Golang, Ruby on Rails and SolidJS backend systems for fintech, SaaS and digital payments." />
   <meta property="og:title" content="Vincent Wijaya | Software Engineer" />
-  <meta property="og:description" content="Innovative software engineer with 6+ years in fintech, SaaS and digital payments." />
+  <meta property="og:description" content="Innovative software engineer with 7+ years in fintech, SaaS and digital payments." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://vincentwijaya.github.io" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -31,7 +31,7 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:title" content="Vincent Wijaya | Software Engineer" />
-  <meta name="twitter:description" content="Innovative software engineer with 6+ years in fintech, SaaS and digital payments." />
+  <meta name="twitter:description" content="Innovative software engineer with 7+ years in fintech, SaaS and digital payments." />
   <meta name="twitter:image" content="https://vincentwijaya.github.io/static/profile-d7448b6014fb6df9ff127d9fed7bb4b7.jpg" />
   <meta name="twitter:image:alt" content="Vincent Wijaya — Software Engineer" />
 
@@ -49,7 +49,7 @@
     "url": "https://vincentwijaya.github.io",
     "image": "https://vincentwijaya.github.io/static/profile-d7448b6014fb6df9ff127d9fed7bb4b7.jpg",
     "jobTitle": "Software Engineer",
-    "description": "Software engineer with 6+ years of expertise in financial services, specialising in scalable NodeJS, Golang, Ruby on Rails and SolidJS backend systems for fintech, SaaS and digital payments.",
+    "description": "Software engineer with 7+ years of expertise in financial services, specialising in scalable NodeJS, Golang, Ruby on Rails and SolidJS backend systems for fintech, SaaS and digital payments.",
     "sameAs": [
       "https://github.com/vincentwijaya",
       "https://www.linkedin.com/in/vincwijaya"
@@ -57,7 +57,8 @@
     "knowsAbout": ["NodeJS", "Golang", "Ruby on Rails", "ReactJS", "NextJS", "VueJS", "SolidJS", "HTMX", "Kubernetes", "Microservices", "Fintech", "Backend Development", "SaaS", "Digital Payments", "Fullstack Development", "Software Engineering"],
     "worksFor": [
       { "@type": "Organization", "name": "PT. BFI Finance Indonesia, TBK" },
-      { "@type": "Organization", "name": "PT. Mid Solusi Nusantara (Mekari)" }
+      { "@type": "Organization", "name": "PT. Mid Solusi Nusantara (Mekari)" },
+      { "@type": "Organization", "name": "PT. Fintek Karya Nusantara (LinkAja)" }
     ],
     "alumniOf": {
       "@type": "CollegeOrUniversity",
@@ -65,7 +66,7 @@
     },
     "address": {
       "@type": "PostalAddress",
-      "addressCountry": "ID"
+      "addressCountry": "AU"
     }
   }
   </script>
@@ -145,7 +146,7 @@
       <h1 class="hero-name">Vincent Wijaya.</h1>
       <h2 class="hero-title">Software Engineer</h2>
       <p class="hero-desc">
-        Innovative software engineer with over 6 years of expertise in financial services.
+        Innovative software engineer with over <span id="years-exp">7</span> years of expertise in financial services.
         Adaptable to diverse tech stacks and thriving in dynamic environments.
       </p>
 
@@ -187,9 +188,9 @@
       <div class="about-grid">
         <div class="about-text">
           <p>
-            I'm a software engineer based in <strong>Indonesia</strong>,
+            I'm a software engineer based in <strong>Sydney, Australia</strong>,
             specialising in building robust, scalable backend systems for the financial sector.
-            With 6+ years of hands on experience across fintech, SaaS, and digital payments,
+            With <span id="years-exp">7+</span> years of hands on experience across fintech, SaaS, and digital payments,
             I've worked on platforms that serve millions of users.
           </p>
           <p>
@@ -496,9 +497,6 @@
       </p>
 
       <div class="contact-list">
-        <a href="mailto:weqqss@yahoo.com" class="contact-link">
-          <i class="fas fa-envelope"></i> weqqss@yahoo.com
-        </a>
         <a href="https://www.linkedin.com/in/vincwijaya"
            target="_blank" rel="noopener noreferrer" class="contact-link">
           <i class="fab fa-linkedin-in"></i> linkedin.com/in/vincwijaya
@@ -516,6 +514,20 @@
     </div>
   </footer>
 
+  <script>
+    (function () {
+      const start = new Date(2018, 9, 1); // October 2018 (month is 0-indexed)
+      const now = new Date();
+      let years = currentDate.getFullYear() - startDate.getFullYear();
+      const monthDifference = currentDate.getMonth() - startDate.getMonth();
+      if (monthDifference < 0 || (monthDifference === 0 && currentDate.getDate() < startDate.getDate())) {
+        years--;
+      }
+      const label = years + '+';
+      const el = document.getElementById('years-exp');
+      if (el) el.textContent = label;
+    })();
+  </script>
   <script src="script.js" defer></script>
 </body>
 </html>
